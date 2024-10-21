@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* 
+ em HTML é id = em CSS é #
+ em HTML é class = em CSS é .
+
+ quando tem 2 elementos, e quer aplicar a mesma configuração nos 2, eu uso CLASS. uma classe faz a configuração personalizada, sendo que pode haver vários elementos com a mesma classe.
+ ID é único. CLASS pode haver vários. 
+ */
+
+body {
+    background-color: #2f82d5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color:aqua;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: #061e35;
+    color: white;
+}
+
+h2 {
+    color:#70b1f1;
+}
+
+.basico {
+    color:green;
+}
+.intermediario{
+    color:yellow;
+}
+.avancado{
+    color:red;
+}
+.destaque {
+    background-color: yellowgreen;
+}
