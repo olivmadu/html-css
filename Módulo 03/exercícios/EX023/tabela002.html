@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -27,6 +28,20 @@
         thead, tfoot { 
             background-color: gray;
             color:white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top:-1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) { /*2n-1*/
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even) { /*2n*/
+            background-color: white;
         }
 
         td.num {
@@ -71,6 +86,18 @@
             <tr>
                 <td>Rio de Janeiro</td>
                 <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
             </tr>
         </tbody>
         <tfoot>
